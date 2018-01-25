@@ -1,0 +1,28 @@
+<article class="bg-conteudo">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<app-progresso [progresso]="progresso" ></app-progresso>	
+			</div>
+			<div class="col-sm-6">
+				<app-tentativas [tentativas]="tentativas" ></app-tentativas>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h3>{{tituloPainel}}</h3>
+				<p>{{rodadaFrase.fraseEng}}</p>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="traduza o texto a cima" (input)="atualizaResposta($event)" [value]="resposta" ></textarea>
+		</div>	
+
+		<div class="row d-flex flex-row-reverse">
+			<img class="loader" [src]="load" title="carregando" alt="carregando">
+			<button class="jbtn my-btn btn btn-success" (click)="verificaResposta()" >Confirmar</button>
+		</div>
+	</div>
+</article>

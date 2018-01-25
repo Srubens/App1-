@@ -1,0 +1,14 @@
+.bg-conteudo{
+	background: #eee;
+	height: -webkit-fill-available;
+}
+
+.my-btn{
+	margin-right: 14px;
+}
+
+.loader{
+    margin-right: 20px;
+    padding: 0 10px;
+    display: none;
+}
